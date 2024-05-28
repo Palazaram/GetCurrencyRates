@@ -89,8 +89,14 @@ To change the request interval (in minutes), send the command through the named 
 To change the API URL, send the command through a named channel as follows:
 
 - The service should already be running. If it is not running, start it;
-- Enter the command: `echo apiurl=https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json > \\.\pipe\GetCurrencyRatesPipe`
+- Enter the command:
+  
+  `echo apiurl=https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange^?json > \\.\pipe\GetCurrencyRatesPipe`
+
+  or `echo apiurl=(https://bank.gov.ua/NBU_uonia?id_api=REF-SWAP_Swaps^&json > \\.\pipe\GetCurrencyRatesPipe`
+
 - **Only the URL of the API can be changed in the command.**
+- **You need to insert the “^” character before the '?' or '&' character in the URL API.”**
 
 # 5. Troubleshooting tips and common issues
 
