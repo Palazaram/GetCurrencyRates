@@ -208,7 +208,7 @@ namespace GetCurrencyRates
         // Update API URL
         private void UpdateApiUrl(string newApiUrl)
         {
-            _apiUrl = newApiUrl.Replace("&", "^&"); // Escape special characters
+            _apiUrl = newApiUrl;
             LogMessage($"API URL updated to {_apiUrl}.");
             UpdateAppConfig("ApiUrl", _apiUrl); // Save to config
         }
