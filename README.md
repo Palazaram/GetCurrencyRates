@@ -81,7 +81,7 @@ The service for getting currency rates is developed using standard .NET Framewor
 To change the request interval (in minutes), send the command through the named channel as follows:
 
 - The service should already be running. If it is not running, start it;
-- Enter the command: `echo interval=5 > \\\.\pipe\GetCurrencyRatesPipe`
+- Enter the command: `echo interval=5 > \\.\pipe\GetCurrencyRatesPipe`
 - **Only the interval time can be changed in the command.**
 
 ## API URL changes
