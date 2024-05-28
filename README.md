@@ -98,6 +98,10 @@ To change the API URL, send the command through a named channel as follows:
 - **Only the URL of the API can be changed in the command.**
 - **You need to insert the “^” character before the '?' or '&' character in the URL API.”**
 
+## Saving JSON file
+
+The JSON file is saved in the folder with the exe file with which you created the service.
+
 # 5. Troubleshooting tips and common issues
 
 ## 1. Using API other than NBU
